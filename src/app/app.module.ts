@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'education', component: EducationComponent },
-  { path: 'achievement', component: AchievementsComponent },
+  { path: 'achievements', component: AchievementsComponent },
   { path: 'references', component: ReferencesComponent },
   { path: 'page-not-found', component: PageNotFoundComponent },
 ];
