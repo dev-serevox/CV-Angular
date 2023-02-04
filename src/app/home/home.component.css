@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.container {
+  position: relative;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Amatic SC', cursive;
+  font-size: 22px;
+}

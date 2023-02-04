@@ -4,14 +4,16 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+
+import { Routes, RouterModule } from '@angular/router';
+
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { ReferencesComponent } from './references/references.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +22,7 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'achievement', component: AchievementsComponent },
   { path: 'references', component: ReferencesComponent },
-  { path: '**', component: PageNotFoundComponent },
+  { path: 'page-not-found', component: PageNotFoundComponent },
 ];
 
 @NgModule({
