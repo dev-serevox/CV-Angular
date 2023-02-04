@@ -1,5 +1,6 @@
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 $primary-font: 'Sora', sans-serif;
 
@@ -161,4 +162,8 @@ nav {
       line-height: 1.1;
     }
   }
+}
+h3 {
+  color: black;
+  font-family: 'Bebas Neue', cursive;
 }
