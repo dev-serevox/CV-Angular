@@ -28,4 +28,5 @@ input[type='text'] {
 }
 p {
   text-transform: capitalize;
+  opacity: unset;
 }
