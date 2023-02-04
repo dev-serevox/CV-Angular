@@ -10,9 +10,21 @@ import { EducationComponent } from './education/education.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { ReferencesComponent } from './references/references.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'achievement', component: AchievementsComponent },
+  { path: 'references', component: ReferencesComponent },
+  { path: '**', component: PageNotFoundComponent },
+];
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [RouterModule.forRoot(routes), BrowserModule, FormsModule],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -22,6 +34,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AchievementsComponent,
     ReferencesComponent,
     PageNotFoundComponent,
+    HomeComponent,
   ],
   bootstrap: [AppComponent],
 })
