@@ -1,0 +1,164 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap');
+
+$primary-font: 'Sora', sans-serif;
+
+// Palette
+
+$primary: #1e3d47;
+$secondary: #f1f6f7ff;
+$light: #fff;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --angle: 0deg;
+  height: 100%;
+  font-family: $primary-font;
+  color: $primary;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: conic-gradient(
+    from var(--angle) at 50% 50%,
+    $primary 0%,
+    $secondary 100%
+  );
+  background-color: rgb(197, 205, 222);
+  animation: bgAnimation 10s infinite linear;
+  animation-play-state: running;
+  overflow-y: hidden;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes bgAnimation {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: -360deg;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.my-btn {
+  border-radius: 0;
+  background-color: $secondary;
+  border: none;
+  color: $primary;
+  padding: 18px 25px;
+  -webkit-box-shadow: 5px 5px 0px 0px $primary;
+  box-shadow: 5px 5px 0px 0px $primary;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+    border: none;
+    -webkit-box-shadow: -5px -5px 0px 0px $secondary;
+    box-shadow: -5px -5px 0px 0px $secondary;
+  }
+}
+
+nav {
+  padding: 14px 0;
+  .logo {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin: 0;
+    }
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+
+    li {
+      padding: 0 20px;
+      a {
+        text-decoration: none;
+        color: $primary;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          margin: auto;
+          width: 0%;
+          height: 2px;
+          background: $secondary;
+          transform-origin: left center;
+          transition: width 0.3s ease-in-out;
+        }
+        &:hover {
+          color: $secondary;
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#hero {
+  height: calc(100vh - 85px);
+  .headline {
+    margin-bottom: 3em;
+    h1 {
+      font-size: clamp(5vw, 5em, 10vw);
+      margin-bottom: 20px;
+      line-height: 1;
+      width: 70%;
+    }
+    .text-bright {
+      color: $secondary;
+    }
+    .desc {
+      margin-bottom: 40px;
+      width: 80%;
+    }
+  }
+}
+
+.num-wrap {
+  color: $secondary;
+  width: 100%;
+  display: flex;
+  .num-col {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .number {
+      font-size: clamp(2.5vw, 2.5em, 3.5vw);
+    }
+    .num-desc {
+      display: flex;
+      justify-content: center;
+      font-size: clamp(12px, 1.5em, 14px);
+      padding-left: 10px;
+      line-height: 1.1;
+    }
+  }
+}
