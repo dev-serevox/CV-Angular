@@ -10,27 +10,27 @@ export class ReferencesComponent implements OnInit {
 
   ngOnInit() {}
   addReference = [
-    { name: 'Name', connection: 'Profession', email: 'E-mail' },
+    { name: 'Name', prof: 'Profession', company: 'Company' },
     {
-      name: 'Kisses Reyes',
-      connection: 'University Professor',
-      email: 'ksgmail.com',
+      name: 'Elon Musk',
+      prof: 'CEO',
+      company: 'Twitter',
     },
-    { name: 'Noie Manoy', connection: 'Web Developer', email: 'nmgmail.com' },
+    { name: 'Satya Nadella', prof: 'CEO', company: 'Microsoft' },
     {
-      name: 'Jed Bartolome',
-      connection: 'Web Developer',
-      email: 'jbgmail.com',
-    },
-    {
-      name: 'Adrian Sarabia',
-      connection: 'University Professor',
-      email: 'asgmail.com',
+      name: 'Jack Ma',
+      prof: 'Chairman',
+      company: 'Alibaba Group',
     },
     {
-      name: 'Mark Laus',
-      connection: 'University Professor',
-      email: 'mlgmail.com',
+      name: 'Sangho Jo',
+      prof: 'Southeast Asia CEO',
+      company: 'Samsung',
+    },
+    {
+      name: 'Tim Cook',
+      prof: 'CEO',
+      company: 'Apple',
     },
   ];
 }

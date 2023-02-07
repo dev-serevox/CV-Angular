@@ -23,7 +23,7 @@ body {
   transition: 0.5s;
 }
 h4 {
-  background-color: #5ca3ff;
+  background-color: red;
   width: 60%;
   position: absolute;
   bottom: 80px;

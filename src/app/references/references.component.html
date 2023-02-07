@@ -26,10 +26,12 @@
         <div class="column">
           <div class="card">
             <div class="img-container">
-              <img src="profile-img-1.png" />
+              <img
+                src="https://stackblitz.com/files/angular-directives-2135-jtbiid/github/Intuyy/CV-Angular/main/pictures/img2.jpg"
+              />
             </div>
             <h3>Luna Turner</h3>
-            <p>Founder</p>
+            <p>CTO</p>
             <div class="icons">
               <a href="#">
                 <i class="fab fa-twitter"></i>
@@ -53,7 +55,7 @@
               <img src="profile-img-2.png" />
             </div>
             <h3>Bryant Hall</h3>
-            <p>Developer</p>
+            <p>Web Developer</p>
             <div class="icons">
               <a href="#">
                 <i class="fab fa-twitter"></i>
@@ -79,7 +81,7 @@
               />
             </div>
             <h3>Hope Watkins</h3>
-            <p>Designer</p>
+            <p>Web Designer</p>
             <div class="icons">
               <a href="#">
                 <i class="fab fa-twitter"></i>
@@ -106,12 +108,12 @@
       <div class="table col-12">
         <table class="col-12">
           <tr *ngFor="let item of addReference">
-            <td [ngStyle]="{ border: '1px solid #74cf9b' }">{{ item.name }}</td>
-            <td [ngStyle]="{ border: '1px solid #74cf9b' }">
-              {{ item.connection }}
+            <td [ngStyle]="{ border: '1px solid #f07470' }">{{ item.name }}</td>
+            <td [ngStyle]="{ border: '1px solid #f07470' }">
+              {{ item.prof }}
             </td>
-            <td [ngStyle]="{ border: '1px solid #74cf9b' }">
-              {{ item.email }}
+            <td [ngStyle]="{ border: '1px solid #f07470' }">
+              {{ item.company }}
             </td>
           </tr>
         </table>
