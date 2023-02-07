@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Our Team Section</title>
+    <title>References</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -19,7 +19,7 @@
   <body>
     <section>
       <div class="row">
-        <h1>Our Team</h1>
+        <h1>MAJOR WORK REFERENCES</h1>
       </div>
       <div class="row">
         <!-- Column 1-->
@@ -96,5 +96,24 @@
         </div>
       </div>
     </section>
+    <div class="additionalRef">
+      <div>
+        <h5 class="text-center">Additional Reference</h5>
+      </div>
+      <br />
+      <div class="table col-12">
+        <table class="col-12">
+          <tr *ngFor="let item of addReference">
+            <td [ngStyle]="{ border: '1px solid #74cf9b' }">{{ item.name }}</td>
+            <td [ngStyle]="{ border: '1px solid #74cf9b' }">
+              {{ item.connection }}
+            </td>
+            <td [ngStyle]="{ border: '1px solid #74cf9b' }">
+              {{ item.email }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>

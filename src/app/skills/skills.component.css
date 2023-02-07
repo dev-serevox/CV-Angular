@@ -74,9 +74,9 @@ h2 {
   width: 0;
   height: 5px;
   border-radius: 10px;
-  background-color: #badefc;
-  border: 1px solid #1c97fc;
-  box-shadow: 0 0 5px rgba(28, 151, 252, 0.6);
+  background-color: #e22c33;
+  border: 1px solid #e22c33;
+  box-shadow: 0 0 5px #e22c33;
 }
 #html-bar {
   animation: html-fill 2s forwards;
